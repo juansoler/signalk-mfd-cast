@@ -1,0 +1,31 @@
+{
+  "name": "signalk-mfd-cast",
+  "version": "0.1.0",
+  "description": "Cast a Navico/B&G/Simrad/Lowrance MFD screen to the browser over WebRTC with optional touch control",
+  "private": true,
+  "license": "UNLICENSED",
+  "keywords": [
+    "signalk-node-server-plugin",
+    "signalk-webapp",
+    "signalk-category-hardware",
+    "mfd",
+    "navico",
+    "webrtc",
+    "go2rtc"
+  ],
+  "author": {
+    "name": "Juan Soler"
+  },
+  "main": "plugin/index.js",
+  "scripts": {
+    "test": "node --test test/",
+    "prepublishOnly": "node -e \"console.error('Private build: do not publish this package.'); process.exit(1)\""
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "signalk": {
+    "appIcon": "./icon.svg",
+    "displayName": "MFD Cast"
+  }
+}
