@@ -244,3 +244,5 @@ scripts/
 ## Licencia
 
 No contiene código de Navico. El material gráfico es propio.
+#   s i g n a l k - m f d - c a s t  
+ 
