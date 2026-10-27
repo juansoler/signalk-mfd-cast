@@ -1,9 +1,8 @@
 {
   "name": "signalk-mfd-cast",
   "version": "0.1.0",
-  "description": "Cast a Navico/B&G/Simrad/Lowrance MFD screen to the browser over WebRTC with optional touch control",
-  "private": true,
-  "license": "UNLICENSED",
+  "description": "Unofficial Signal K plugin: mirror a Navico/B&G/Simrad/Lowrance MFD screen in the browser over WebRTC, with optional touch and key control",
+  "license": "MIT",
   "keywords": [
     "signalk-node-server-plugin",
     "signalk-webapp",
@@ -11,21 +10,44 @@
     "mfd",
     "navico",
     "webrtc",
-    "go2rtc"
+    "go2rtc",
+    "screen-mirror"
   ],
   "author": {
     "name": "Juan Soler"
   },
   "main": "plugin/index.js",
+  "files": [
+    "plugin",
+    "public",
+    "scripts",
+    "images",
+    "test",
+    "icon.svg",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
   "scripts": {
     "test": "node --test test/",
-    "prepublishOnly": "node -e \"console.error('Private build: do not publish this package.'); process.exit(1)\""
+    "prepublishOnly": "npm test"
   },
   "engines": {
     "node": ">=20"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juansoler/signalk-mfd-cast.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juansoler/signalk-mfd-cast/issues"
+  },
+  "homepage": "https://github.com/juansoler/signalk-mfd-cast#readme",
   "signalk": {
     "appIcon": "./icon.svg",
-    "displayName": "MFD Cast"
+    "displayName": "MFD Cast",
+    "screenshots": [
+      "./images/viewer.png"
+    ]
   }
 }

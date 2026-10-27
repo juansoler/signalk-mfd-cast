@@ -1,8 +1,7 @@
 # signalk-mfd-cast
 
-> **Build privado.** Uso local en tu barco. No está pensado para publicarse en
-> npm ni en un repositorio público: `package.json` es `private` y tiene un
-> `prepublishOnly` que aborta cualquier `npm publish`.
+> **Proyecto no oficial.** No está afiliado ni respaldado por Navico, Simrad,
+> B&G ni Lowrance. Esos nombres se usan solo para indicar compatibilidad.
 
 Plugin de Signal K que **retransmite la pantalla de un MFD Navico** (Simrad,
 B&G, Lowrance) a un navegador web, con **control táctil y de teclas** opcional,
@@ -62,6 +61,19 @@ la barra de estado y en `/status`.
 - `go2rtc` (el script de instalación lo descarga; binario estático, ~15 MB).
 
 ## Instalación
+
+### Desde la AppStore
+
+Admin → App Store → **MFD Cast** → Install. La AppStore no ejecuta scripts de
+instalación, así que después hay que instalar ffmpeg y go2rtc:
+
+```bash
+sudo apt install -y ffmpeg
+~/.signalk/node_modules/signalk-mfd-cast/scripts/install-go2rtc.sh
+sudo systemctl restart signalk
+```
+
+### Desde una copia local
 
 ```bash
 sudo apt update && sudo apt install -y ffmpeg
@@ -243,4 +255,7 @@ scripts/
 
 ## Licencia
 
-No contiene código de Navico. El material gráfico es propio.
+MIT. El código y los recursos gráficos son originales. No se incluye código ni material de Navico.
+
+Navico, Simrad, B&G y Lowrance son marcas de sus respectivos propietarios. Este
+proyecto no está afiliado ni respaldado por ellos.
