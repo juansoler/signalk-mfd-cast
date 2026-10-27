@@ -9,7 +9,8 @@
  *   | len hi | len lo | cmd hi | cmd lo | payload (len-2)  |
  *   +--------+--------+--------+--------+------------------+
  *
- * `len` counts the command field plus the payload. The constants below are data, not instructions.
+ * `len` counts the command field plus the payload. The constants below are
+ * data, not instructions.
  */
 
 const { EventEmitter } = require("events");

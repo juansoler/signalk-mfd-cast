@@ -255,7 +255,8 @@ scripts/
 
 ## Licencia
 
-MIT. El código y los recursos gráficos son originales. No se incluye código ni material de Navico.
+MIT. El código y los recursos gráficos son originales. No se incluye código ni
+material de Navico.
 
 Navico, Simrad, B&G y Lowrance son marcas de sus respectivos propietarios. Este
 proyecto no está afiliado ni respaldado por ellos.
