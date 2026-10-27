@@ -1,6 +1,6 @@
 {
   "name": "signalk-mfd-cast",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Unofficial Signal K plugin: mirror a Navico/B&G/Simrad/Lowrance MFD screen in the browser over WebRTC, with optional touch and key control",
   "license": "MIT",
   "keywords": [
